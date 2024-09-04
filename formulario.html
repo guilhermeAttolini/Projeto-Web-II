@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="form.css">
+		<title>Info</title>
+	</head>
+	
+	<body>
+	
+		<div class='container'>
+		
+			<main>
+				
+					<h1>Para mais informações, preencha os dados abaixo para contato:</h1>
+					
+							<form action="./resposta.html" method="post">
+								<label for="nome">Nome:</label>
+								<input type="text" name="nome" id="nome" autofocus required pattern="[aA-zZ\s]+$"><br>
+								
+								<label for="sobrenome">Sobrenome:</label>
+								<input type="text" name="sobrenome" id="sobrenome" autofocus required pattern="[aA-zZ\s]+$"><br>
+								
+								<label for="email">E-mail:</label>
+								<input type="email" name="email" id="email" placeholder="Ex.:usuario@gmail.com" autofocus required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+								
+								<label for="telefone">Telefone (cel):</label>
+								<input type="tel" name="telefone" id="telefone" placeholder="Apenas números" autofocus required pattern="[0-9]+$"><br>
+								
+								<input type="submit">
+							</form>	
+							
+							<div class="voltar">
+								<form action="./index.html" method="post">
+									<input type="submit" value="Voltar à página inicial">
+								</form>
+							</div>
+						
+			</main>		
+			
+		</div>
+		
+	</body>
+	
+</html>
